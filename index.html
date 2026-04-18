@@ -3,34 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clima Soluções – Instalação de Ar-Condicionado</title>
+  <title>Clima Soluções – Instalação de Ar-Condicionado e Aquecedor a Gás</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;0,900;1,900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .hero-two-services { display: flex; gap: 16px; margin-top: 28px; flex-wrap: wrap; }
+    .hero-service-badge {
+      display: flex; align-items: center; gap: 10px;
+      background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.25);
+      border-radius: 50px; padding: 10px 20px;
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1rem;
+      color: var(--white); text-transform: uppercase; letter-spacing: .06em;
+    }
+    .hero-service-badge .badge-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+
+    #pilares { background: var(--white); padding: 0; }
+    .pilares-wrap { display: grid; grid-template-columns: 1fr 1fr; }
+    .pilar { padding: 70px 5vw; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+    .pilar-ac { background: linear-gradient(135deg, var(--navy) 0%, #0f3070 100%); }
+    .pilar-gas { background: linear-gradient(135deg, #7b1d00 0%, #c0390a 100%); }
+    .pilar .p-icon { font-size: 3.5rem; margin-bottom: 8px; }
+    .pilar h2 { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: clamp(1.6rem, 3vw, 2.4rem); text-transform: uppercase; color: var(--white); line-height: 1.1; letter-spacing: .03em; }
+    .pilar h2 span { color: var(--accent); display: block; }
+    .pilar p { color: rgba(255,255,255,.78); font-size: .97rem; line-height: 1.75; max-width: 380px; }
+    .pilar a {
+      margin-top: 8px; display: inline-flex; align-items: center; gap: 8px;
+      background: var(--wa); color: var(--white); padding: 12px 24px; border-radius: 8px;
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: .95rem;
+      letter-spacing: .07em; text-transform: uppercase; text-decoration: none;
+      transition: transform .18s, box-shadow .18s;
+    }
+    .pilar a:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,211,102,.4); }
+    @media (max-width: 768px) {
+      .pilares-wrap { grid-template-columns: 1fr; }
+      .pilar { padding: 50px 6vw; }
+    }
+  </style>
 </head>
 <body>
 
-<!-- ── NAV ──────────────────────────────────────────────── -->
+<!-- NAV -->
 <nav>
   <a href="#inicio" class="nav-logo">
     <span class="snowflake">❄</span>
-    <span>Clima Soluções<em>Ar-condicionado</em></span>
+    <span>Clima Soluções<em>Ar-Condicionado &amp; Aquecedor a Gás</em></span>
   </a>
-
   <button class="burger" id="burger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
-
   <ul class="nav-links" id="navLinks">
     <li><a href="#inicio">Início</a></li>
+    <li><a href="#pilares">Especialidades</a></li>
     <li><a href="#servicos">Serviços</a></li>
     <li><a href="#diferenciais">Diferenciais</a></li>
     <li><a href="#depoimentos">Depoimentos</a></li>
     <li><a href="#contato">Contato</a></li>
     <li>
-      <a href="https://wa.me/5511949865204?text=Olá!%20Gostaria%20de%20solicitar%20um%20serviço."
-         target="_blank" class="cta-nav">
+      <a href="https://wa.me/5511958355033?text=Olá!%20Gostaria%20de%20solicitar%20um%20serviço." target="_blank" class="cta-nav">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.117 1.528 5.845L.057 23.714a.5.5 0 0 0 .63.63l5.869-1.471A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.794 9.794 0 0 1-4.98-1.359l-.356-.213-3.692.925.994-3.616-.233-.373A9.77 9.77 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
         WhatsApp
       </a>
@@ -38,188 +69,226 @@
   </ul>
 </nav>
 
-<!-- ── HERO ─────────────────────────────────────────────── -->
+<!-- HERO -->
 <section id="inicio">
   <div class="flakes" id="flakes"></div>
   <div class="hero-inner">
     <div class="hero-text">
-      <p class="section-tag" style="margin-bottom:16px;">✦ Especialistas em climatização</p>
-      <h1>Instalação de<span>Ar-condicionado</span></h1>
-      <p class="hero-tagline">Conforto térmico o ano todo, com quem entende do assunto. Atendemos residências e empresas em toda a região.</p>
-      <div class="hero-btns">
-        <a href="https://wa.me/5511947887499?text=Olá!%20Gostaria%20de%20solicitar%20um%20serviço."
-           target="_blank" class="btn btn-primary">
+      <p class="section-tag" style="margin-bottom:16px;">✦ Especialistas em climatização e aquecimento</p>
+      <h1>Instalação de<span>Ar-Condicionado</span><span style="color:var(--sky);font-size:clamp(1.6rem,3.5vw,2.8rem);">& Aquecedor a Gás</span></h1>
+      <p class="hero-tagline">Conforto no verão com ar-condicionado instalado com precisão. Calor no inverno com aquecedor a gás instalado com segurança. Tudo com quem entende do assunto — a <strong style="color:var(--white)">Clima Soluções</strong>.</p>
+      <div class="hero-two-services">
+        <div class="hero-service-badge"><span class="badge-dot"></span>❄️ Ar-Condicionado</div>
+        <div class="hero-service-badge"><span class="badge-dot"></span>🔥 Aquecedor a Gás</div>
+      </div>
+      <div class="hero-btns" style="margin-top:28px;">
+        <a href="https://wa.me/5511958355033?text=Olá!%20Gostaria%20de%20solicitar%20um%20serviço." target="_blank" class="btn btn-primary">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.117 1.528 5.845L.057 23.714a.5.5 0 0 0 .63.63l5.869-1.471A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.794 9.794 0 0 1-4.98-1.359l-.356-.213-3.692.925.994-3.616-.233-.373A9.77 9.77 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
           Solicitar Orçamento
         </a>
-        <a href="#servicos" class="btn btn-outline">Ver Serviços</a>
+        <a href="#pilares" class="btn btn-outline">Nossos Serviços</a>
       </div>
     </div>
-
     <div class="hero-cards">
       <div class="hero-card">
         <div class="icon">❄️</div>
         <div>
-          <h3>Higienização</h3>
-          <p>Ar puro e saudável para sua família com limpeza profissional completa.</p>
+          <h3>Instalação de Ar-Condicionado</h3>
+          <p>Split, multi-split e janela. Instalação segura com acabamento profissional e garantia de serviço.</p>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="icon">🔥</div>
+        <div>
+          <h3>Instalação de Aquecedor a Gás</h3>
+          <p>Passagem, acumulação e boilers. Instalação dentro das normas de segurança com laudo técnico.</p>
         </div>
       </div>
       <div class="hero-card">
         <div class="icon">🔧</div>
         <div>
-          <h3>Instalação</h3>
-          <p>Instalação segura e garantida com acabamentos de qualidade superior.</p>
-        </div>
-      </div>
-      <div class="hero-card">
-        <div class="icon">🛡️</div>
-        <div>
-          <h3>Manutenção</h3>
-          <p>Preventiva e corretiva para máxima eficiência e durabilidade do equipamento.</p>
+          <h3>Manutenção & Higienização</h3>
+          <p>Preventiva e corretiva para ar-condicionado e aquecedores de todas as marcas e modelos.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── SERVIÇOS ─────────────────────────────────────────── -->
-<section id="servicos">
+<!-- ESPECIALIDADES -->
+<section id="pilares">
+  <div class="pilares-wrap reveal">
+    <div class="pilar pilar-ac">
+      <div class="p-icon">❄️</div>
+      <h2>Ar-Condicionado<span>Instalação, Manutenção & Higienização</span></h2>
+      <p>Somos especialistas em instalação de ar-condicionado split, multi-split e janela para residências, escritórios e comércios. Trabalhamos com todas as marcas e capacidades. Garantimos acabamento impecável, vedação perfeita e funcionamento eficiente desde o primeiro uso. Também realizamos higienização profunda e manutenção preventiva e corretiva para manter seu aparelho sempre em dia.</p>
+      <a href="https://wa.me/5511958355033?text=Olá!%20Gostaria%20de%20solicitar%20um%20serviço%20de%20ar-condicionado." target="_blank">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.117 1.528 5.845L.057 23.714a.5.5 0 0 0 .63.63l5.869-1.471A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.794 9.794 0 0 1-4.98-1.359l-.356-.213-3.692.925.994-3.616-.233-.373A9.77 9.77 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        Quero meu Ar-Condicionado
+      </a>
+    </div>
+    <div class="pilar pilar-gas">
+      <div class="p-icon">🔥</div>
+      <h2>Aquecedor a Gás<span>Instalação & Manutenção com Segurança</span></h2>
+      <p>Instale seu aquecedor a gás com total segurança e tranquilidade. Atendemos aquecedores de passagem (instantâneos), acumulação e boilers de todas as marcas. Nossa equipe é treinada para instalações dentro das normas técnicas de segurança, garantindo água quente sempre que você precisar. Também fazemos revisão, limpeza e manutenção corretiva para aparelhos com qualquer tipo de problema.</p>
+      <a href="https://wa.me/5511958355033?text=Olá!%20Gostaria%20de%20solicitar%20um%20serviço%20de%20aquecedor%20a%20gás." target="_blank">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.117 1.528 5.845L.057 23.714a.5.5 0 0 0 .63.63l5.869-1.471A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.794 9.794 0 0 1-4.98-1.359l-.356-.213-3.692.925.994-3.616-.233-.373A9.77 9.77 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        Quero meu Aquecedor a Gás
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" style="background:var(--gray);">
   <div class="reveal">
-    <p class="section-tag">✦ O que fazemos</p>
-    <h2 class="section-title">Nossos <span>Serviços</span></h2>
-    <p class="section-sub">Oferecemos soluções completas em climatização para residências e empresas, com qualidade e garantia em tudo que fazemos.</p>
+    <p class="section-tag">✦ Tudo que oferecemos</p>
+    <h2 class="section-title">Todos os <span>Serviços</span></h2>
+    <p class="section-sub">Da instalação à manutenção — ar-condicionado e aquecedor a gás — atendemos residências e empresas em toda a Grande São Paulo com qualidade e garantia.</p>
   </div>
   <div class="services-grid reveal">
     <div class="service-card">
       <div class="s-icon">❄️</div>
-      <h3>Higienização</h3>
-      <p>Limpeza profunda do ar-condicionado eliminando fungos, bactérias e ácaros. Seu ar fica mais puro, saudável e sem mau cheiro.</p>
-      <a href="https://wa.me/5511947887499?text=Olá!%20Gostaria%20de%20solicitar%20Higienização%20de%20ar-condicionado." target="_blank" class="s-cta">Solicitar →</a>
+      <h3>Instalação de Ar-Condicionado</h3>
+      <p>Instalação completa de split, multi-split e janela. Passagem de tubulação, elétrica e fixação com acabamento perfeito. Todas as marcas e capacidades (BTUs).</p>
+      <a href="https://wa.me/5511958355033?text=Olá!%20Gostaria%20de%20solicitar%20Instalação%20de%20Ar-Condicionado." target="_blank" class="s-cta">Solicitar →</a>
     </div>
     <div class="service-card">
-      <div class="s-icon">🔧</div>
-      <h3>Instalação</h3>
-      <p>Instalação completa e segura de ar-condicionado split, multi-split e janela. Acabamento impecável com garantia de serviço.</p>
-      <a href="https://wa.me/5511947887499?text=Olá!%20Gostaria%20de%20solicitar%20Instalação%20de%20ar-condicionado." target="_blank" class="s-cta">Solicitar →</a>
+      <div class="s-icon">🧊</div>
+      <h3>Higienização de Ar-Condicionado</h3>
+      <p>Limpeza profunda eliminando fungos, bactérias e ácaros nos filtros e serpentinas. Ar mais puro, saudável e sem mau cheiro para sua família ou equipe.</p>
+      <a href="https://wa.me/5511958355033?text=Olá!%20Gostaria%20de%20solicitar%20Higienização%20de%20Ar-Condicionado." target="_blank" class="s-cta">Solicitar →</a>
     </div>
     <div class="service-card">
       <div class="s-icon">⚙️</div>
-      <h3>Manutenção Preventiva</h3>
-      <p>Revisões periódicas para manter seu equipamento sempre funcionando no máximo desempenho e com menor consumo de energia.</p>
-      <a href="https://wa.me/5511947887499?text=Olá!%20Gostaria%20de%20solicitar%20Manutenção%20Preventiva." target="_blank" class="s-cta">Solicitar →</a>
-    </div>
-    <div class="service-card">
-      <div class="s-icon">🛠️</div>
-      <h3>Manutenção Corretiva</h3>
-      <p>Diagnóstico e reparo rápido de defeitos. Atendimento ágil para restaurar o conforto do seu ambiente no menor tempo possível.</p>
-      <a href="https://wa.me/5511947887499?text=Olá!%20Gostaria%20de%20solicitar%20Manutenção%20Corretiva." target="_blank" class="s-cta">Solicitar →</a>
+      <h3>Manutenção de Ar-Condicionado</h3>
+      <p>Preventiva e corretiva para manter o aparelho funcionando com máximo desempenho, menor consumo de energia e maior vida útil.</p>
+      <a href="https://wa.me/5511958355033?text=Olá!%20Gostaria%20de%20solicitar%20Manutenção%20de%20Ar-Condicionado." target="_blank" class="s-cta">Solicitar →</a>
     </div>
     <div class="service-card">
       <div class="s-icon">🔩</div>
-      <h3>Desinstalação</h3>
-      <p>Remoção segura do equipamento com preservação dos componentes para reinstalação ou descarte correto e sustentável.</p>
-      <a href="https://wa.me/5511947887499?text=Olá!%20Gostaria%20de%20solicitar%20Desinstalação%20de%20ar-condicionado." target="_blank" class="s-cta">Solicitar →</a>
+      <h3>Desinstalação de Ar-Condicionado</h3>
+      <p>Remoção segura com preservação do gás e dos componentes para reinstalação em outro local ou descarte correto e sustentável do equipamento.</p>
+      <a href="https://wa.me/5511958355033?text=Olá!%20Gostaria%20de%20solicitar%20Desinstalação%20de%20Ar-Condicionado." target="_blank" class="s-cta">Solicitar →</a>
+    </div>
+    <div class="service-card">
+      <div class="s-icon">🔥</div>
+      <h3>Instalação de Aquecedor a Gás</h3>
+      <p>Instalação profissional e segura de aquecedores de passagem, acumulação e boilers. Todas as marcas. Serviço dentro das normas técnicas com laudo de segurança incluso.</p>
+      <a href="https://wa.me/5511958355033?text=Olá!%20Gostaria%20de%20solicitar%20Instalação%20de%20Aquecedor%20a%20Gás." target="_blank" class="s-cta">Solicitar →</a>
+    </div>
+    <div class="service-card">
+      <div class="s-icon">🛠️</div>
+      <h3>Manutenção de Aquecedor a Gás</h3>
+      <p>Revisão, limpeza e reparo de aquecedores com chama instável, ignição falhando, água fria ou vazamento. Diagnóstico rápido com peças originais.</p>
+      <a href="https://wa.me/5511958355033?text=Olá!%20Gostaria%20de%20solicitar%20Manutenção%20de%20Aquecedor%20a%20Gás." target="_blank" class="s-cta">Solicitar →</a>
     </div>
     <div class="service-card">
       <div class="s-icon">🏢</div>
       <h3>Projetos Comerciais</h3>
-      <p>Soluções de climatização para empresas, lojas e escritórios. Projetos personalizados com foco em eficiência energética.</p>
-      <a href="https://wa.me/5511947887499?text=Olá!%20Gostaria%20de%20um%20projeto%20comercial%20de%20ar-condicionado." target="_blank" class="s-cta">Solicitar →</a>
+      <p>Soluções completas de climatização e aquecimento para empresas, lojas e escritórios. Projetos personalizados com foco em eficiência energética e conforto.</p>
+      <a href="https://wa.me/5511958355033?text=Olá!%20Gostaria%20de%20um%20projeto%20comercial." target="_blank" class="s-cta">Solicitar →</a>
+    </div>
+    <div class="service-card">
+      <div class="s-icon">📋</div>
+      <h3>Visita Técnica e Orçamento</h3>
+      <p>Não sabe qual equipamento comprar ou onde instalar? Fazemos visita técnica para indicar a melhor solução para o seu espaço — orçamento sem compromisso.</p>
+      <a href="https://wa.me/5511958355033?text=Olá!%20Gostaria%20de%20agendar%20uma%20visita%20técnica." target="_blank" class="s-cta">Agendar →</a>
     </div>
   </div>
 </section>
 
-<!-- ── DIFERENCIAIS ─────────────────────────────────────── -->
+<!-- DIFERENCIAIS -->
 <section id="diferenciais">
   <div class="reveal">
     <p class="section-tag">✦ Por que nos escolher</p>
     <h2 class="section-title" style="color:var(--white)">Nossos <span style="color:var(--accent)">Diferenciais</span></h2>
-    <p class="section-sub">Comprometidos com a qualidade em cada detalhe do serviço prestado.</p>
+    <p class="section-sub" style="color:#a8c8f0;">Somos referência em instalação de ar-condicionado e aquecedor a gás na Grande São Paulo. Veja por que nossos clientes nos recomendam.</p>
   </div>
   <div class="diff-grid reveal">
     <div class="diff-card">
       <div class="d-icon">🏆</div>
-      <h3>Serviço Garantido</h3>
-      <p>Todos os nossos serviços possuem garantia por escrito. Ficou com problema? A gente resolve.</p>
+      <h3>Garantia em Tudo</h3>
+      <p>Todos os serviços — ar-condicionado ou aquecedor a gás — possuem garantia por escrito. Deu problema? A gente resolve sem custo adicional.</p>
     </div>
     <div class="diff-card">
       <div class="d-icon">⚡</div>
-      <h3>Atendimento Rápido</h3>
-      <p>Agendamos para o mesmo dia ou próximo dia útil. Seu conforto não pode esperar.</p>
+      <h3>Atendimento no Mesmo Dia</h3>
+      <p>Agendamos para o mesmo dia ou próximo dia útil. Conforto e segurança não podem esperar — especialmente em casos de problema com gás.</p>
     </div>
     <div class="diff-card">
       <div class="d-icon">👨‍🔧</div>
       <h3>Técnicos Certificados</h3>
-      <p>Equipe treinada e certificada para garantir a segurança e qualidade da instalação.</p>
+      <p>Equipe treinada tanto em refrigeração quanto em instalações a gás, garantindo segurança e qualidade profissional em cada atendimento.</p>
     </div>
     <div class="diff-card">
       <div class="d-icon">💰</div>
-      <h3>Preço Justo</h3>
-      <p>Orçamento transparente e sem surpresas. O que combinamos é o que você paga.</p>
+      <h3>Orçamento Transparente</h3>
+      <p>Preço justo e sem surpresas. Antes de começar, você recebe orçamento detalhado — o que combinamos é exatamente o que você paga.</p>
     </div>
     <div class="diff-card">
       <div class="d-icon">🌿</div>
       <h3>Economia de Energia</h3>
-      <p>Instalação correta e manutenção em dia significam menos gasto na conta de luz.</p>
+      <p>Instalação correta de ar-condicionado e manutenção do aquecedor a gás significam menos gasto na conta de luz e gás todo mês.</p>
     </div>
     <div class="diff-card">
       <div class="d-icon">📱</div>
       <h3>Suporte via WhatsApp</h3>
-      <p>Tire dúvidas, agende e acompanhe seu serviço diretamente pelo WhatsApp.</p>
+      <p>Tire dúvidas, agende e acompanhe seu serviço pelo WhatsApp — sem burocracia, sem fila de atendimento telefônico.</p>
     </div>
   </div>
 </section>
 
-<!-- ── DEPOIMENTOS ──────────────────────────────────────── -->
+<!-- DEPOIMENTOS -->
 <section id="depoimentos">
   <div class="reveal">
     <p class="section-tag">✦ O que dizem nossos clientes</p>
     <h2 class="section-title">Depoimentos</h2>
-    <p class="section-sub">A satisfação de quem já usou nossos serviços é o nosso maior orgulho.</p>
+    <p class="section-sub">Quem instalou ar-condicionado ou aquecedor a gás com a Clima Soluções sabe: qualidade e segurança em primeiro lugar.</p>
   </div>
   <div class="testimonials reveal">
     <div class="tcard">
       <div class="stars">★★★★★</div>
-      <p>"Excelente serviço! O técnico chegou no horário combinado, fez uma instalação impecável e deixou tudo limpinho. Super recomendo!"</p>
+      <p>"Instalei o ar-condicionado split com a Clima Soluções e fiquei impressionada com o acabamento perfeito. Chegaram no horário, deixaram tudo limpo e o aparelho funciona perfeitamente. Super recomendo!"</p>
       <div class="author">
         <div class="avatar">MA</div>
         <div>
           <div class="name">Marina Alves</div>
-          <div class="loc">São Paulo, SP</div>
+          <div class="loc">São Paulo, SP — Instalação de Ar-Condicionado</div>
         </div>
       </div>
     </div>
     <div class="tcard">
       <div class="stars">★★★★★</div>
-      <p>"Pedi orçamento pelo WhatsApp e em minutos já tinha resposta. Atendimento rápido, preço honesto e serviço de qualidade. Nota 10!"</p>
+      <p>"Precisava instalar um aquecedor a gás e fiquei com receio de contratar qualquer empresa. A Clima Soluções me passou confiança desde o início, fizeram tudo dentro das normas e me explicaram cada etapa. Nota 10!"</p>
       <div class="author">
         <div class="avatar">RC</div>
         <div>
           <div class="name">Rafael Costa</div>
-          <div class="loc">Osasco, SP</div>
+          <div class="loc">Osasco, SP — Instalação de Aquecedor a Gás</div>
         </div>
       </div>
     </div>
     <div class="tcard">
       <div class="stars">★★★★★</div>
-      <p>"Fiz a higienização do meu ar-condicionado e a diferença foi enorme! O ar ficou muito mais fresco e sem aquele cheiro ruim. Voltarei com certeza."</p>
+      <p>"Fiz a higienização do ar-condicionado e a diferença foi enorme! Aproveitei e instalei um aquecedor a gás também — serviço impecável nas duas vezes. Já indiquei para vários amigos e vizinhos!"</p>
       <div class="author">
         <div class="avatar">JS</div>
         <div>
           <div class="name">Juliana Santos</div>
-          <div class="loc">Guarulhos, SP</div>
+          <div class="loc">Guarulhos, SP — Higienização + Aquecedor a Gás</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── CONTATO ──────────────────────────────────────────── -->
-<section id="contato">
+<!-- CONTATO -->
+<section id="contato" style="background:var(--gray);">
   <div class="reveal">
     <p class="section-tag">✦ Fale conosco</p>
     <h2 class="section-title">Entre em <span>Contato</span></h2>
-    <p class="section-sub">Solicite um orçamento sem compromisso. Respondemos rápido!</p>
+    <p class="section-sub">Solicite um orçamento para instalação de ar-condicionado ou aquecedor a gás. Respondemos rápido pelo WhatsApp!</p>
   </div>
   <div class="contact-wrap reveal">
     <div class="contact-info">
@@ -227,7 +296,21 @@
         <div class="i-icon">📱</div>
         <div>
           <h4>WhatsApp / Telefone</h4>
-          <a href="https://wa.me/5511947887499?text=Olá!%20Gostaria%20de%20solicitar%20um%20serviço." target="_blank">(11) 94788-7499</a>
+          <a href="https://wa.me/5511958355033?text=Olá!%20Gostaria%20de%20solicitar%20um%20serviço." target="_blank">(11) 95835-5033</a>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="i-icon">❄️</div>
+        <div>
+          <h4>Ar-Condicionado</h4>
+          <p>Instalação, higienização e manutenção de todas as marcas e modelos</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="i-icon">🔥</div>
+        <div>
+          <h4>Aquecedor a Gás</h4>
+          <p>Instalação segura e manutenção de aquecedores de passagem, acumulação e boilers</p>
         </div>
       </div>
       <div class="info-item">
@@ -244,21 +327,12 @@
           <p>Grande São Paulo e região metropolitana</p>
         </div>
       </div>
-      <div class="info-item">
-        <div class="i-icon">🛡️</div>
-        <div>
-          <h4>Garantia de Serviço</h4>
-          <p>Todos os serviços com garantia e nota fiscal</p>
-        </div>
-      </div>
     </div>
-
     <div class="wa-block">
       <div class="wa-icon">💬</div>
       <h3>Solicite um Serviço Agora</h3>
-      <p>Clique abaixo e fale diretamente com nossa equipe pelo WhatsApp. Atendimento rápido e orçamento sem compromisso!</p>
-      <a href="https://wa.me/5511947887499?text=Olá!%20Gostaria%20de%20solicitar%20um%20serviço."
-         target="_blank" class="btn-wa-big">
+      <p>Ar-condicionado ou aquecedor a gás — fale com nossa equipe pelo WhatsApp e receba um orçamento rápido e sem compromisso!</p>
+      <a href="https://wa.me/5511958355033?text=Olá!%20Gostaria%20de%20solicitar%20um%20serviço." target="_blank" class="btn-wa-big">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.117 1.528 5.845L.057 23.714a.5.5 0 0 0 .63.63l5.869-1.471A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.794 9.794 0 0 1-4.98-1.359l-.356-.213-3.692.925.994-3.616-.233-.373A9.77 9.77 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
         Falar no WhatsApp
       </a>
@@ -266,15 +340,15 @@
   </div>
 </section>
 
-<!-- ── FOOTER ───────────────────────────────────────────── -->
+<!-- FOOTER -->
 <footer>
-  <p>© 2026 <strong>Clima Soluções</strong> — Instalação de Ar-Condicionado &nbsp;·&nbsp; (11) 94788-7499</p>
-  <p style="margin-top:6px;">Feito com ❄️ para o seu conforto</p>
+  <p>© 2025 <strong>Clima Soluções</strong> — Instalação de Ar-Condicionado &amp; Aquecedor a Gás &nbsp;·&nbsp; (11) 95835-5033</p>
+  <p style="margin-top:6px;">CNPJ: 64.993.185/0001-65</p>
+  <p style="margin-top:6px;">Grande São Paulo e região metropolitana &nbsp;·&nbsp; Feito com ❄️🔥 para o seu conforto</p>
 </footer>
 
-<!-- ── FLOATING WA ──────────────────────────────────────── -->
-<a href="https://wa.me/5511947887499?text=Olá!%20Gostaria%20de%20solicitar%20um%20serviço."
-   target="_blank" class="float-wa" title="Falar no WhatsApp">
+<!-- FLOATING WA -->
+<a href="https://wa.me/5511958355033?text=Olá!%20Gostaria%20de%20solicitar%20um%20serviço." target="_blank" class="float-wa" title="Falar no WhatsApp">
   <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.117 1.528 5.845L.057 23.714a.5.5 0 0 0 .63.63l5.869-1.471A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.794 9.794 0 0 1-4.98-1.359l-.356-.213-3.692.925.994-3.616-.233-.373A9.77 9.77 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
 </a>
 
