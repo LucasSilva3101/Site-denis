@@ -1,8 +1,14 @@
 // ── Burger menu
 const burger = document.getElementById('burger');
 const navLinks = document.getElementById('navLinks');
-burger.addEventListener('click', () => navLinks.classList.toggle('open'));
-navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+burger.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('open');
+  burger.setAttribute('aria-expanded', isOpen);
+});
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  navLinks.classList.remove('open');
+  burger.setAttribute('aria-expanded', 'false');
+}));
 
 // ── Snowflakes
 const flakesContainer = document.getElementById('flakes');
@@ -25,3 +31,20 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
 }, { threshold: 0.12 });
 reveals.forEach(r => observer.observe(r));
+
+// ── FAQ accordion
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+    // close all
+    document.querySelectorAll('.faq-q').forEach(b => {
+      b.setAttribute('aria-expanded', 'false');
+      b.nextElementSibling.classList.remove('open');
+    });
+    // open clicked if it was closed
+    if (!isExpanded) {
+      btn.setAttribute('aria-expanded', 'true');
+      btn.nextElementSibling.classList.add('open');
+    }
+  });
+});
